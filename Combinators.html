@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Combinators</title>
+    <link rel="stylesheet" href="base.css"/>
+    <style>
+
+        h1 { /* 0 0 0 1 */
+            font-size: 2em;
+            letter-spacing: 0.25em;
+        }
+
+        section article h1 { /* Space - descendant combinator */ /* 0 0 0 3 */
+            font-size: 3em;
+            color: blue;
+        }
+
+        header > h1 { /* Child - descendant combinator */ /* 0 0 0 2 */
+            color: #555;
+        }
+
+        li.second + li { /* Adjacent Sibling */
+            background-color: red;
+        }
+
+        li.second, li.second + li { /* Grouping Combinator */
+            background-color: green;
+        }
+
+        li.second + li, ul > li {
+            background-color: blue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <section>
+            <article>
+                <header>
+                    <h1>UI Development</h1>
+                </header>
+                <div>
+                    <ul>
+                        <li>Object Oriented JS</li>
+                        <li class="second">Functional JS</li>
+                        <li>ES6 and related ... </li>
+                        <li>ES6 and related ... </li>
+                        <li>ES6 and related ... </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </div>
+
+</body>
+</html>

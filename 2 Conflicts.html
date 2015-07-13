@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Conflicts</title>
+    <link rel="stylesheet" href="base.css"/>
+    <style>
+
+        div {
+            padding: 1em;
+        }
+
+        div {
+            background-color: blue;
+            color: white;
+        }
+
+        div#ronak { /* 0 1 0 1 */
+            background-color: green;
+        }
+
+        #ronak { /* 0 1 0 0 */
+            background-color: white;
+        }
+
+
+        div {
+            background-color: red;
+            color: white;
+        }
+
+        div.info.myinfo { /* 0 0 2 1 */
+            background-color: yellow;
+        }
+
+        div.info { /* 0 0 1 1 */
+            background-color: yellow;
+        }
+
+        /* Important, Specificty, Cascade */
+
+        /* 0 0 0 0 */
+        /* inline style, id, class / attribute, element */
+
+    </style>
+</head>
+<body>
+
+    <div style="background-color: pink !important;" id="instructor">Hamid Hoseini</div>
+
+    <div id="ronak" class="myinfo info"> Ronak </div>
+
+</body>
+</html>
