@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Floats</title>
-    <meta name="description" content="How to fix a collapse issue when the children of a parent are floated;"/>
+    <meta name="description" content="Inline blocks"/>
     <link rel="stylesheet" href="base.css"/>
     <style>
 
@@ -18,24 +18,19 @@
             margin: 1em;
             background-color: rgba(255, 0, 0, 0.62);
 
-            float: left;
-        }
-
-        div.below {
-            clear: left; /* right, both */
+            display: inline-block;
         }
 
     </style>
 </head>
 <body>
 
-    <div class="parent">
-        <!--<span>I want to be in the same line!</span>-->
-        <div class="floated"></div>
-        <div class="floated"></div>
-        <div class="floated"></div>
-        <div class="below"></div>
-    </div>
+<div class="parent">
+    <!--<span>I want to be in the same line!</span>-->
+    <div class="floated"></div>
+    <div class="floated"></div>
+    <div class="floated"></div>
+</div>
 
 
 </body>
