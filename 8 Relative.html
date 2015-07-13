@@ -7,44 +7,35 @@
     <style>
 
         div.square {
-            background-color: red;
+            background-color: rgba(255, 0, 0, 0.73);
             height: 100px;
             width: 100px;
             margin: 1em;
             display: block;
 
+
+            position: absolute;
+
             float: left;
+
+            top: 200px;
+            left: 200px;
+
         }
 
-        div.square.right {
-            float: right;
-            background-color: blue;
-        }
-
-        span {
-            background-color: rgba(0, 128, 0, 0.62);
-            color: white;
-            /*width: 100px; /!* height and width do not get applied onto inline elements *!/
-            height: 100px;*/
-
-            padding: 1em;
-
-            display: inline-block;
-
+        div.parent {
+            position: relative;
         }
 
     </style>
 </head>
 <body>
 
-<nav>
-    <a href="Home"></a>
-</nav>
-
 spanLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum ut lorem luctus convallis. Aenean nulla quam, euismod vitae sodales vel, ultrices ac quam. Nullam blandit augue in augue dignissim facilisis. Curabitur quam ligula, lacinia et faucibus ut, sodales sit amet neque. Integer libero ex, tempor vel convallis tincidunt, rhoncus sit amet felis. Nunc sit amet sem sed nisi tristique aliquet. Vivamus finibus sem eget ex bibendum, vitae viverra sem finibus. Suspendisse ut venenatis justo, et egestas ligula. Fusce pellentesque eros sit amet elit tempus condimentum. Vivamus vitae risus dictum, dictum sem in, vulputate dolor. Integer at auctor justo, vitae ultricies erat.
 
-<div class="square">Content</div>
-<div class="square right">Content</div>
+<div class="parent">
+    <div class="square"></div>
+</div>
 
 Nam vitae sapien convallis, tincidunt ante nec, sollicitudin risus. Nunc aliquam sagittis feugiat. Sed ultrices elementum magna id viverra. Aenean est dui, consequat eu ex a, ullamcorper sagittis quam. Morbi dapibus tincidunt ex, eu condimentum magna sagittis vitae. Phasellus rutrum tristique nisi nec ullamcorper. Maecenas ante elit, maximus elementum facilisis a, congue eu nulla. In dolor nisi, posuere id lacus eget, suscipit porttitor sapien. Suspendisse lobortis pharetra quam, id facilisis metus faucibus at. Cras cursus tincidunt lacus, a vehicula ante sagittis dapibus. Nam dolor dolor, ornare in pharetra eu, euismod at ligula. Duis leo risus, faucibus et velit sit amet, volutpat pharetra tortor. Vivamus vestibulum diam massa, ac hendrerit urna venenatis et. Pellentesque volutpat sit amet dui sit amet lobortis. Donec condimentum venenatis velit, a condimentum ipsum ornare vitae.
 

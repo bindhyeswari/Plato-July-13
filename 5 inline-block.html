@@ -15,8 +15,16 @@
         div.parent > div.floated {
             height: 100px;
             width: 100px;
-            margin: 1em;
+            /*margin: 1em;*/
             background-color: rgba(255, 0, 0, 0.62);
+
+            display: inline-block;
+        }
+
+        div.data {
+            background-color: red;
+            color: white;
+            padding: 1em;
 
             display: inline-block;
         }
@@ -26,11 +34,15 @@
 <body>
 
 <div class="parent">
+    <span>UI Developer</span>
     <!--<span>I want to be in the same line!</span>-->
     <div class="floated"></div>
     <div class="floated"></div>
     <div class="floated"></div>
 </div>
+
+<div class="data">Data</div>
+<div class="data">Data</div>
 
 
 </body>
